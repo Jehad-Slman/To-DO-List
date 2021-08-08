@@ -8,16 +8,14 @@ import classes from './ListElement.module.css'
 
 const ListElement = props => {
 
-    const [checked, setChecked] = useState(false);
+    const [checked, setChecked] = useState(props.checked);
 
     const check = () => {
-       const state = () => {
-        if ( checked ){
-            setChecked(false)      
-           }else{
-            setChecked(true);
-           } 
-       }
+       if ( checked ){
+        setChecked(false)      
+       }else{
+        setChecked(true);
+       } 
        props.onCheck(!checked, props.id)
     }
 

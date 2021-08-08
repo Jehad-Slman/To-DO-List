@@ -14,6 +14,7 @@ const List = props => {
         if (value === 'all'){
             return e;
         }else if ( value === 'completed') {
+            console.log (e.checked)
             return e.checked ? e : null;
         }else if (value === 'active') {
             return !e.checked ? e : null ;
@@ -24,7 +25,7 @@ const List = props => {
     const viewItems = () => {
        const t = filterdItems.map(element => {
             return (
-                <ListElement onCheck={(e,i) =>props.checkHandler(e,i)} onDelet={() => props.deletElement(element.id)} key={element.id} id={element.id} value={element.value}/>
+                <ListElement onCheck={(e,i) =>props.checkHandler(e,i)} onDelet={() => props.deletElement(element.id)} key={element.id} checked={element.checked} id={element.id} value={element.value}/>
             )
         })
         return t

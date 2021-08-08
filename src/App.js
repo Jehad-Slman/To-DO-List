@@ -39,6 +39,7 @@ function App() {
 
   const check = (e,i) => {
     elements[i].checked = e;
+    console.log("the check", elements[i].checked)
   }
 
 
