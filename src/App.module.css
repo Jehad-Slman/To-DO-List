@@ -1,0 +1,15 @@
+.cover {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(to right, silver , #032436);
+    position: relative;
+    min-height: 100vh;
+}
+
+.title {
+    text-align: center;
+    letter-spacing: 1.5rem;
+    margin: 0;
+    padding: 10px;
+}
+

@@ -1,0 +1,59 @@
+.element {
+    width: 100%;
+    background: linear-gradient(to right,rgba(3, 36, 54,.4) , rgba(192, 192, 192,.6) ) ;
+    padding: 5px 15px;
+    width: 95%;
+    border: 1px solid #032436;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    -webkit-animation: slide .5s   1 ease-in-out ;
+    -moz-animation: slide .5s   1 ease-in-out ;
+    -o-animation: slide .5s   1 ease-in-out ;
+    animation: slide 1s   1 ease-in-out ;
+}
+
+.element p {
+    justify-self: start;
+    font-size: 1.4rem;
+    font-weight: 400;
+    word-wrap: wrap;
+
+}
+
+.marks {
+    margin-left: auto;
+    font-size: 1.8rem;
+}
+
+.checkmark {
+    margin: 0 5px;
+    color: #032436;
+    cursor: pointer;
+}
+
+.deletmark {
+    margin: 0 5px;
+    color: #b80d0d;
+    cursor: pointer;
+}
+
+.checked{
+    text-decoration: line-through;
+    font-weight: normal;
+}
+
+.markChecked {
+    color: green;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
