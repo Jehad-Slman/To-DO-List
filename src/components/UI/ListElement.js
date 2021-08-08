@@ -11,11 +11,13 @@ const ListElement = props => {
     const [checked, setChecked] = useState(false);
 
     const check = () => {
-       if ( checked ){
-        setChecked(false)      
-       }else{
-        setChecked(true);
-       } 
+       const state = () => {
+        if ( checked ){
+            setChecked(false)      
+           }else{
+            setChecked(true);
+           } 
+       }
        props.onCheck(!checked, props.id)
     }
 
