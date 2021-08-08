@@ -1,6 +1,7 @@
 .filter {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     width: 98%;
     margin-bottom: 30px;
     overflow: hidden;
@@ -12,10 +13,11 @@
     border:none;
     cursor: pointer;
     outline: none;
-    width: 50%;
+    width: 100%;
     background: silver;
     border-radius: 15px;
     font-size: 1.2rem;
+    margin-bottom:10px ;
 }
 
 .filter select-selected {

@@ -14,6 +14,11 @@
     animation: slide 1s   1 ease-in-out ;
 }
 
+@media  (max-width < 500) {
+    .element {
+        width: 90%;
+    }
+}
 .element p {
     justify-self: start;
     font-size: 1.4rem;
